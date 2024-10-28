@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="img/8832880.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js">
+
+    </script>
+</head>
+
+<body>
+    <div class="backg">
+        <div class="container">
+            <div class="p-5">
+                <h1 class="book m-auto">Bookmark</h1>
+            </div>
+            <div class="bord py-5 d-flex flex-column p-5">
+                <h3 class="text-center"><span><i class=" fa-solid fa-bookmark p-1"></i></span>Bookmark your favorite
+                    sites<span><i class="p-1 fa-solid fa-bookmark"></i></span></h3>
+                <form action=""><label for="" class="h4"><i class="fa-solid fa-book-bookmark px-3"></i>Site Name</label>
+                    <input id="webSiteName" type="text" class="form-control p-3 in-put" placeholder="Enter Site Name">
+                    <div class="alert alert-danger d-none" id="nameAlert">RE-Enter Website Name</div>
+                    <label for="" class="h4"><i class="fa-solid fa-link px-3"></i>Site URL</label>
+                    <input value="" id="webSiteURL" type="text" placeholder="Enter Site URL"
+                        class="form-control p-3 in-put textc" min="1" max="5">
+                    <div class="alert alert-danger d-none" id="urlAlert">RE-Enter Website URL</div>
+                    <div class="text-center pt-5">
+                        <button class="btn btn-outline-primary p-3" onclick="addSite()">submit</button>
+                        <button class="btn btn-outline-primary p-3" onclick="">Update</button>
+                        <button class="btn btn-outline-danger p-3" type="button" onclick="clrProduct()">clear
+                            form</button>
+                    </div>
+                </form>
+                <input id="searchInput" class="form-control m-auto w-50 mt-5" placeholder="search...">
+            </div>
+        </div>
+    </div>
+    <div class="tb-div">
+        <div class=" container  pt-5">
+            <table class="table  table-striped table-bordered  table-hover text-center">
+                <thead>
+                    <th>Index</th>
+                    <th>Site Name</th>
+                    <th>Site URL</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableData">
+                </tbody>
+            </table>
+            <!-- <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-light">visit</a> -->
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
